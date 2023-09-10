@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS ->CDN Link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Bootstrap CDN for icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+     <!-- custom  CSS File made by me -->
+     <link rel =    "stylesheet" href="Mystyle.css">
+
+     <!-- CSS File for MapBox -->
+     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css' rel='stylesheet' />
+
+
+     <title>SLLIT</title>
+
+</head>
+
+
+
+<body>
+
+<!------------------------------------------------------- Nav Bar ------------------------------------------------------->
+<nav class="navbar       navbar-light    bg-info        navbar-expand-sm    fixed-top">
+
+     <div class="container">
+
+          <a href="#" class="navbar-brand" > SLIIT </a>
+
+          <button class="navbar-toggler"     data-bs-toggle="collapse" data-bs-target="#Navbar1">        <span class="navbar-toggler-icon"></span>    </button>
+
+          <div class="collapse          navbar-collapse"    id="Navbar1">  <! –– Nav Bar can collapse like a drop down button ––> 
+               
+               <ul class="navbar-nav    ms-auto"> 
+                    <li class="nav-item">         <a href="#Learn1"  class="nav-link active"> Get Foundation </a>               </li>
+                    <li class="nav-item">         <a href="#Discount1"  class="nav-link"> Get Discounts </a>                 </li>
+                    <li class="nav-ite m">        <a href="#FaQ1"  class="nav-link"> Frequently Asked Questions </a>              </li>
+                    <li class="nav-item">         <a href="#Contact1"  class="nav-link"> Contact Us </a>      </li>
+               </ul>
+
+          </div>
+
+     </div>    
+          
+</nav>
+
+
+<!------------------------------------------------------- Show Case ------------------------------------------------------->
+
+<section  class="bg-info      text-dark          text-center         text-sm-start       pt-5       pt-lg-5">
+     <div class="container">
+          <div class="d-md-flex         align-items-center       justify-content-between">               
+          
+               <div>                    
+                    <h1> GROW UP with <span class="text-primary"> SLIIT </span>     </h1>
+                    <p class="lead      my-4">The University Grants Commission (UGC) has approved SLIIT as a premier non-state degree issuing institute under the Universities Act. SLIIT is being the first Sri Lankan institute to be certified by the Institution of Engineering and Technology in the United Kingdom.</p>
+
+                    <button class="btn btn-primary btn-lg   mb-3" data-bs-toggle="modal" data-bs-target="#enroll">Start The Enrollment</button>
+               </div>
+               <div>
+                    <br>
+                    <img class="img-fluid    d-none    d-md-block" src="images/SLIIT_Logo.png" alt="">
+               </div>
+
+          </div>
+     </div>    
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1">
+     <div class="modal-dialog">
+          <div class="modal-content">
+               
+               <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+
+               <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you</p>
+
+                    <form>
+
+                         <div class="mb-3">
+                         <label for="firstname" class="form-label">First Name</label>
+                         <input type="text" class="form-control" id="firstname">                         
+                         </div>
+                         <div class="mb-3">
+                         <label for="exampleInputEmail1" class="form-label">Email address</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1">
+                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                         </div>
+                         <div class="mb-3">
+                         <label for="exampleInputPassword1" class="form-label">Password</label>
+                         <input type="password" class="form-control" id="exampleInputPassword1">
+                         </div>
+                         <div class="mb-3 form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                         </div>
+                         
+                    </form>
+
+               </div>
+
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Submit</button>
+               </div>
+
+          </div>
+     </div>
+</div>
+
+<!------------------------------------------------ Signup for Newsletter Part ------------------------------------------------>
+
+<section  class="bg-danger        text-dark      pt-3">
+     <div class="container">
+          <div class="d-md-flex         align-items-center       justify-content-between">               
+          
+               <div>
+                    <h3  class="mb-3         mb-md-0"> Sign Up For Our Newsletter    </h1>                    
+               </div>
+               <div>
+                    
+
+                    <div class="input-group mb-3  news-input">
+                         <input type="text" class="form-control" placeholder="Enter your Email">
+                               <button class="btn btn-warning   btn-lg" type="button" id="button-addon2">Signup</button>
+                    </div>
+
+
+
+
+               </div>
+
+          </div>
+     </div>    
+</section>
+
+<!-- Make Responsive Carousels -->
+
+     <div>
+          <div  id="carouselExampleControls" class="carousel slide    carousel-fade" data-bs-ride="carousel">
+               
+               <div class="carousel-indicators">            
+               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+
+               <div class="carousel-inner">
+                    
+                    <div class="carousel-item          active"        data-bs-interval="3000">
+                         <img src="images/SLIIT1.jpg"     alt=""         class="d-block w-100">
+                         <div class="carousel-caption">
+                         <h5>Graduate with us.</h5>
+                         <p>Graduation is no longer a dream for you. We can make you a graduate within the promised time.</p>
+                         </div>                   
+                    </div>    
+
+                    <div class="carousel-item"         data-bs-interval="1000">
+                         <img src="images/SLIIT2.jpg"      alt=""         class="d-block w-100">   
+                         <div class="carousel-caption">
+                         <h5>Best Facilities</h5>
+                         <p>We provide uperior facilities for onsite and e-learning facilities for students.</p>
+                          </div>             
+                    </div>
+
+                    <div class="carousel-item"         data-bs-interval="1000">
+                         <img src="images/SLIIT3.jpg"      alt=""         class="d-block w-100">   
+                         <div class="carousel-caption">
+                         <h5>Join with us</h5>
+                         <p>If you want to make your graduation dream come true, please join hands with us.</p>
+                         </div>              
+                    </div>
+
+               </div>    
+               <!-- Carousel Buttons -->
+               <a href="#carouselExampleControls" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+               </a>
+
+               <a href="#carouselExampleControls" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+               </a>           
+          </div>
+     </div>
+
+
+     <!------------------------------------------------ 3 Card Boxes ------------------------------------------------>
+
+
+<section class="p-5">
+     <div class="container">
+          <div class="row     text-center         g-4">
+               
+               <div class="col-md">
+
+                    <div class="card    bg-dark        text-light">        
+                                                  
+                         <div class="card-body    text-center">
+                              <div class="h1      mb-3">
+                                   <i class="bi bi-award-fill"></i>
+                              </div>
+                              <h3 class="card-title    mb-3">    Awarded         </h3>
+                              <p class="card-text">We are proud to be listed as a leading and formidable awarding institute authorised and approved by the UGC under the Universities Act, and the International Association of Universities (IAU).</p>
+                              <a href="#"  class="btn btn-primary">   Read More>     </a>
+                         </div>    
+
+                    </div>
+
+               </div>
+
+               <div class="col-md">
+
+                    <div class="card    bg-dark        text-light">        
+                                                  
+                         <div class="card-body    text-center">
+                              <div class="h1      mb-3">
+                                   <i class="bi bi-laptop"></i>
+                              </div>
+                              <h3 class="card-title    mb-3">    E-Learning  </h3>
+                              <p class="card-text">SLIIT is the leading tertiary education providers in Sri Lanka with the largest number of students in the private sector higher education industry with E-Learning facility.</p>
+                              <a href="#"  class="btn btn-primary">   Read More>     </a>
+                         </div>                        
+
+                    </div>
+
+               </div>
+
+               <div class="col-md">
+                    
+                    <div class="card    bg-dark        text-light">        
+                                                  
+                         <div class="card-body    text-center">
+                              <div class="h1      mb-3">
+                                   <i class="bi bi-shield-shaded"></i>
+                              </div>
+                              <h3 class="card-title    mb-3">    Secured   </h3>
+                              <p class="card-text">The security of your data is important to us. These course is designed for students with integrate of trusted security systems so you don't need to have worry.</p>
+                              <a href="#"  class="btn btn-primary">   Read More>     </a>
+                         </div>                        
+
+                    </div>
+
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-------------------------------------------------- Show Case -> Get Foundation -------------------------------------------------->
+
+<section class="p-5"     id="Learn1">
+     
+     <div class="container">
+          
+          <div class="row     align-items-center  justify-content-between">               
+               
+               <div class="col-md">
+                    <img src="images/Get_Foundation.png" class="img-fluid" alt="">
+               </div>
+               
+               <div class="col-md       p-5">
+                    <h1  class="text-center">     Get Foundation    </h1>
+                    <p class="lead           text-center">The Foundation Certificate in Higher Education is intended for students who do not meet the admission requirements for degree programs. </p>
+                    <p class="lead           text-center">The program provides students with the chance to build and improve the necessary knowledge and skills to succeed at the undergraduate level. Students may enter year 1 of a degree program immediately after completing the program.</p>
+
+                    <button class="btn btn-light  mt-3">
+                         <i class="bi bi-chevron-right"></i>
+                         Read More                          
+                    </button>
+               </div>
+
+          </div>
+
+     </div>
+
+</section>
+
+
+
+<!---------------------------------------------------- Show Case -> Get Discounts ---------------------------------------------------->
+
+<section class="p-5"     id="Discount1">
+     
+     <div class="container">
+          
+          <div class="row     align-items-center  justify-content-between       bg-dark        text-light">   
+               
+               <div class="col-md       p-5">
+                    <h1  class="text-center">     Get Discounts  </h1>
+                    <p class="lead           text-center">Access exclusive academic discounts on digital resources. Save your students and faculty up to 50% at no cost to your institution and without licensing the tools for them. </p>
+                    <p class="lead           text-center">Connect them to the academic offers available exclusively through Enrolment through website.</p>
+
+                    <button class="btn btn-dark   mt-3">
+                         <i class="bi bi-chevron-right"></i>
+                         Read More                          
+                    </button>
+               </div>
+
+               <div class="col-md">
+                    <img src="images/Get_Discounts.jfif" class="img-fluid" alt="">
+               </div>
+
+          </div>
+
+     </div>
+
+</section>
+
+<!-------------------------------------------------- Frequently Asked Questions part -------------------------------------------------->
+
+<section class="p-5"     id="FaQ1">
+     <div class="container">
+          
+          <h2 class="text-center mb-4"> Frequently Asked Questions </h2>
+
+          
+          <div class="accordion accordion-flush" id="questions">
+               
+               <!-- Item 1 -->
+               <div class="accordion-item">
+               <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1">
+                    Foundation course fee 
+
+                         </button>
+               </h2>
+               <div id="question-1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">You can contact academic affairs' to get more details regarding the course fees.</div>
+               </div>
+               </div>
+
+               <!-- Item 2 -->
+               <div class="accordion-item">
+               <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2">
+                    What are the centers in Sri lanka
+
+                         </button>
+               </h2>
+               <div id="question-2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Malabe, Kollupitiya, Kandy, Matara, Kurunegala</div>
+               </div>
+               </div>
+
+               <!-- Item 3 -->
+               <div class="accordion-item">
+               <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3">
+                         Do you have hybrid class systems
+                         </button>
+               </h2>
+               <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Yes, we provide both onsite and e-learning facilities for students. You can use every facility with no boundries.</div>
+               </div>
+               </div>
+
+          </div>
+          
+
+     </div>
+</section>
+
+<!-------------------------------------------------- Our Instructors part -------------------------------------------------->
+
+<section id="instructors" class="p-5 bg-info">
+     <div class="container">
+          <h2 class="text-center text-dark">Our Instructors</h2>
+          <p class="lead text-center text-dark mb-5">Our instructors all have 10+ years of working experience with international recognition.</p>
+          
+          <div class="row g-4">
+               
+               <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                         <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/men/11.jpg"  class="rounded-circle  mb-3"  alt="">
+                              <h3 class="card-title mb-3">John Doe</h3>
+                              <p class="card-text">Master of Science in Information Technology (Specialization in Cyber Security) SLIIT (2018)</p>
+                              <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                         <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/women/11.jpg"  class="rounded-circle  mb-3"  alt="">
+                              <h3 class="card-title mb-3">Jane Doe</h3>
+                              <p class="card-text">Ms. Jane Doe has over 18 years of experience in English language teaching in higher education.</p>
+                              <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                         <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/men/12.jpg"  class="rounded-circle  mb-3"  alt="">
+                              <h3 class="card-title mb-3">Steve Smith</h3>
+                              <p class="card-text">Dept. of Engineering Mathematics, Faculty of Engineering, University of Peradeniya, Sri Lanka</p>
+                              <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                         <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/women/12.jpg"  class="rounded-circle  mb-3"  alt="">
+                              <h3 class="card-title mb-3">Sarah Smith</h3>
+                              <p class="card-text">First Class Honours, Bachelor of Business Management Special Degree – University of Kelaniya, Sri Lanka.</p>
+                              <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                              <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+
+     </div>
+</section>
+
+
+<!-------------------------------------------------- Contact Info with Map part -------------------------------------------------->
+
+<section class="p-5" id="Contact1">
+     <div class="container">
+          
+          <div class="row g-4">
+               
+               <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                         <li class="list-group-item">       <span class="fw-bold">Main Location:</span>  SLIIT Malabe Campus, New Kandy Rd, Malabe 10115     </li>
+                         <li class="list-group-item">       <span class="fw-bold">Phone:</span>  +94 11 754 4801                        </li>
+                         <li class="list-group-item">       <span class="fw-bold">Enrolment Email:</span>    INFO@SLIIT.LK       </li>
+                         <li class="list-group-item">       <span class="fw-bold">Student Email:</span>  stu.@gmail.org                          </li>
+                    </ul>
+               </div>
+
+               <div class="col-md">                    
+                    <div id="map"></div>
+               </div>
+
+     </div>
+</section>
+
+
+<!-------------------------------------------------------- Footer part -------------------------------------------------------->
+
+<footer class="p-5 bg-dark    text-white  text-center       position-relative">
+     
+     <div class="container">
+          <p class="lead">CopyRight &copy; 2022 Sarah Fernando</p>
+
+          <a href="" class="position-absolute     bottom-0  end-0     p-5">     <i class="bi bi-arrow-up-circle h1"></i>     </a>
+          
+     </div>
+
+     
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS CDN bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<!-- JS Mapbox -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js'></script>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicnlhbndpY2tyYW1hcmF0bmUiLCJhIjoiY2wxc3o2aWh1MDM3dTNkbnkybjc2d2ppcyJ9.xiN3YL3nFTM63Ib9XlB4Ig';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+
+center: [79.9729, 6.9147],
+zoom: 13
+
+});
+
+</script>
+
+     
+</body>
+
+</html>
